@@ -1,12 +1,12 @@
 const jwt_decode = require('jwt-decode');
 const readline = require('readline');
-
+const fs = require('fs');
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+  input: fs.createReadStream('target.txt')
 });
-  rl.question('Enter a token, please: ', (token) => {
+  rl.on('line', function (line){
+    var token = line;
     var decoded = jwt_decode(token);
-    console.log(decoded);
+    console.log(jwt_decode(line));
     rl.close();
 });
