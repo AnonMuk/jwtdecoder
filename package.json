@@ -1,0 +1,22 @@
+{
+  "name": "jwtdecoder",
+  "version": "1.0.0",
+  "description": "Simple JavaScript application to decode JWT Tokesn using jwt-decode (https://github.com/auth0/jwt-decode).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnonMuk/jwtdecoder.git"
+  },
+  "author": "Zubair Mukhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnonMuk/jwtdecoder/issues"
+  },
+  "homepage": "https://github.com/AnonMuk/jwtdecoder#readme",
+  "dependencies": {
+    "jwt-decode": "^2.2.0"
+  }
+}
