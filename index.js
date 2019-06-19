@@ -1,5 +1,4 @@
-const single = require('./singleProcess');
-const bulk = require('./bulkProcess');
+const processor = require('./processor');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -7,12 +6,13 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Enter 1 for single jwt item or 2 for bulk process. Anything else will exit.', (token) => {
+rl.question('Enter 1 for single jwt item or 2 for bulk process. Anything else will exit. ', (token) => {
   if(token == "1"){
-    single.oneJWT();
+    rl.pause();
+    processor.single();
   }
   else if (token == "2"){
-    bulk.bulkJWT();
+    processor.bulk();
   }
     rl.close();
 });
