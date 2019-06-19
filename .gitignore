@@ -1,6 +1,5 @@
-#target files
+#custom files
 target.txt
-
 # Logs
 logs
 *.log
