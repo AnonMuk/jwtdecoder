@@ -2,6 +2,7 @@
 target_old.txt
 target.txt
 raw output.txt
+raw output_old.txt
 # Logs
 logs
 *.log
