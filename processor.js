@@ -2,6 +2,8 @@ const jwt_decode = require('jwt-decode');
 const jwtreader = require('jsonwebtoken')
 const readline = require('readline');
 const fs = require('fs');
+const atob = require('atob');
+
 var exports = module.exports;
 
 //single jwt processor
@@ -11,6 +13,8 @@ exports.single = function oneJWT(token){
     console.log(decoded.header);
     console.log("\nBody:");
     console.log(decoded.payload);
+    console.log("\nSignature:")
+    console.log(decoded.signature);
 }
 
 //bulk jwt processor from 'target.txt' in main directory
