@@ -1,5 +1,5 @@
 # jwtdecoder
-Simple JavaScript application to decode JWT Tokesn using jwt-decode (https://github.com/auth0/jwt-decode).
+Simple JavaScript application to decode JWT Tokens using jsonwebtoken (https://www.npmjs.com/package/jsonwebtoken).
 
 ## Installation:
 `npm install`
