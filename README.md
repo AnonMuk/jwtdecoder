@@ -1,5 +1,7 @@
 # jwtdecoder
-Simple JavaScript application to decode JWT Tokens using jsonwebtoken (https://www.npmjs.com/package/jsonwebtoken).
+Simple JavaScript application to decode JWT Tokens using jsonwebtoken (https://www.npmjs.com/package/jsonwebtoken) and jwt-decode (https://github.com/auth0/jwt-decode).
+
+Currently, bulk processing only shows body and not header. I'm working on that.
 
 ## Installation:
 `npm install`

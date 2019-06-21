@@ -1,3 +1,4 @@
+const jwt_decode = require('jwt-decode');
 const jwtreader = require('jsonwebtoken')
 const readline = require('readline');
 const fs = require('fs');
@@ -22,11 +23,8 @@ exports.bulk = function bulkJWT(){
       if (line == "New Scan")
         console.log("\n\nNEXT SCAN\n\n");
       else{
-        var decoded = jwtreader.decode(line);
-        console.log("Header:");
-        console.log(decoded.header);
-        console.log("\nBody:");
-        console.log(decoded.payload);
+        var decoded = jwt_decode(line);
+        console.log(decoded);
         rl.close();
       }
   });
